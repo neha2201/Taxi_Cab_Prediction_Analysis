@@ -116,8 +116,9 @@ Table-2: Statistical Information of Raw Dataset
   |      pickup_day_no   	        |                                         Weekday in numbers                                                          |
   
   
- - Dummy Variable Creation: Machine Learning Algorithms cannot work on object type datatypes so for that reason if we have any categorical variable preent in the given dataset, I have to convert it. Since all the variables are in integer form.
-
+ - Dummy Variable Creation: Machine Learning Algorithms cannot work on object type datatypes so for that reason if we have any categorical variable preent in the given dataset,
+   I have created dummy of time of day and pickup_day. Also, we created other variables such as Is_weekend, Is_starting_of_month etc for better analysis.
+   
  Table-4: Final list of variables used in Model
  
   |       Columns            |                     |              | 
@@ -139,6 +140,24 @@ Table-2: Statistical Information of Raw Dataset
 ![image](https://user-images.githubusercontent.com/79011767/139195035-41a60941-f148-43b4-bfc8-bd7961dd0cdc.png)
 
 I checked the distribution of the amount/fare and as it can be seen that the distribution is highly positive skewed. In addition, the density of fare in the range of 0 to 20 is significantly higher. This could indicate that individuals prefer not to use taxi services for long distances because long distances imply a high fare.
+
+
+![image](https://user-images.githubusercontent.com/79011767/139392226-74ca88f1-83be-496f-b16b-4fab6558fe8c.png)
+
+In comparison to the other times, the fare is significantly higher in the afternoon and at night. This increase could be related to the unusual hours, as most cab firms impose a night premium so that drivers don't cancel rides and lose out on the odd hour incentives.
+
+We had now divided the entire 24-hour period into four pieces. Namely:
+  - Morning: 6 a.m. to 12 p.m.
+  - Afternoon: 12 p.m. to 16 p.m.
+  - Evening: 16 p.m. to 22 p.m.
+  - Night: 22 p.m. to 24 p.m.
+
+![image](https://user-images.githubusercontent.com/79011767/139392691-8cc68ae5-c205-446a-ace2-8040ef852094.png)
+
+The suitable trend may be seen when looking at the time of day vs. the number of passengers on different days. The majority of passengers travelling at evening and night do so on weekends, particularly on Friday, Saturday and Sunday, while for other times of day, particularly in the morning, less people use taxi services on Saturday and Sunday.
+
+
+
 
 
 
