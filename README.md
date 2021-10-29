@@ -157,39 +157,14 @@ We had now divided the entire 24-hour period into four pieces. Namely:
 The suitable trend may be seen when looking at the time of day vs. the number of passengers on different days. The majority of passengers travelling at evening and night do so on weekends, particularly on Friday, Saturday and Sunday, while for other times of day, particularly in the morning, less people use taxi services on Saturday and Sunday.
 
 
+![image](https://user-images.githubusercontent.com/79011767/139394497-9d5a5627-9e57-47b1-ae29-61177ff432e9.png)
+
+With respect to different days, time of day vs. average fare. Wednesday has the lowest average fare for evening and morning travel, while Friday and Monday have the highest average fare for afternoon and night travel.
 
 
+![image](https://user-images.githubusercontent.com/79011767/139394742-56eeacce-b3df-4069-b184-5a4621793ccf.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This graph is represnetation of pickup_day Vs count of rides. As I see during Weekend i.e on Friday, Saturday and Sunday count of rides get increase.
 
 
 # Model Building:
@@ -212,23 +187,23 @@ Table-5: Statistics of Predicted variable (Taxi fare)
   |       Statistic          |   Training Dataset  |  Testing Dataset  | 
   |--------------------------|---------------------|-------------------|
   |                          |       Amount        |     Amount        |  
-  |     count                |    Is_Mid_month     |   Is_Leap        |    
-  |     mean	               |   Is_Ending_month	 | Is_it_Weekend   |                       
-  |      std                 |     Morning	       |    Evening      |                   
-  |      	min                |     Afternoon	     |                | 
-  |       Q1                 |                   |                 |
-  |       Q2                 |                    |                |
-  |       Q3                 |                   |                   |
-  |      Max                 |                |                 |
+  |     count                |       40000         |     10000         |    
+  |     mean	               |        11.25	       |      11.29        |                       
+  |      std                 |        8.97	       |        9          |                   
+  |      	min                |          3	         |        3          | 
+  |       Q1                 |          6          |          6        |
+  |       Q2                 |         8.5         |         8.5       |
+  |       Q3                 |       12.5          |          12       |
+  |      Max                 |        52.0         |        52.0       |
   
   
   Table-6: Model Statistics of Training and Testing dataset
   
   |   Model Parameter	|    Training Dataset	  |  Testing Dataset	|
   |-------------------|-----------------------|-------------------|
-  |  R square(R2)	    |                   |                     |
-  |  MAE              |                |                        |
-  | RMSE              |              |                         |
+  |  R square(R2)	    |       81.8            |         79.2      |
+  |  MAE              |       2.09            |        2.15       |
+  | RMSE              |       3.81            |         4.06      |
 
 
 
