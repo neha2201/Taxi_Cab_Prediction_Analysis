@@ -201,7 +201,7 @@ Table-5: Statistics of Predicted variable (Taxi fare)
   
   |   Model Parameter	|    Training Dataset	  |  Testing Dataset	|
   |-------------------|-----------------------|-------------------|
-  |  R square(R2)	    |       81.8            |         79.2      |
+  |  Model Score	    |       81.8            |         79.2      |
   |  MAE              |       2.09            |        2.15       |
   | RMSE              |       3.81            |         4.06      |
 
